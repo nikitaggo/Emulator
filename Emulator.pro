@@ -58,6 +58,15 @@ INCLUDEPATH += \
 DEFINES += \
     CPU_Z80_STATIC
 
+android
+{
+my_files.path = /assets
+my_files.files = $$PWD/assets/*
+INSTALLS += my_files
+OTHER_FILES += \
+    rom/
+}
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

@@ -6,6 +6,7 @@
 #include "emulation/CPU/Z80.h"
 #include <QTimer>
 #include <QFileDialog>
+#include <QMessageBox>
 
 
 QT_BEGIN_NAMESPACE
@@ -21,6 +22,10 @@ public:
     ~MainWindow();
 
     void load_sna(const QString& filename);
+
+    void s_z80(const QString filename);
+
+    void l_z80(const QString filename);
 
     void keyPressed(int sc);
 
@@ -82,6 +87,12 @@ private slots:
     void on_actionReset_triggered();
 
     void on_actionNMI_triggered();
+
+    void on_actionAbout_triggered();
+
+    void on_actionSave_Z80_triggered();
+
+    void on_actionLoad_Z80_triggered();
 
 private:
     Ui::MainWindow *ui;

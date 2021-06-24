@@ -227,6 +227,10 @@
     </property>
     <addaction name="actionSave_screensot"/>
     <addaction name="action_Load_screenshot"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Z80"/>
+    <addaction name="actionLoad_Z80"/>
+    <addaction name="separator"/>
     <addaction name="actionE_xit"/>
    </widget>
    <widget class="QMenu" name="menuMachine">
@@ -299,6 +303,16 @@
   <action name="actionSave_screensot">
    <property name="text">
     <string>Save screenshot...</string>
+   </property>
+  </action>
+  <action name="actionSave_Z80">
+   <property name="text">
+    <string>Save Z80</string>
+   </property>
+  </action>
+  <action name="actionLoad_Z80">
+   <property name="text">
+    <string>Load Z80</string>
    </property>
   </action>
  </widget>
